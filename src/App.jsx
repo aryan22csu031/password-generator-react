@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-4xl text-white font-bold flex justify-center mt-9 mb-[7rem]'>Random Password Generator</h1>
+      <h1 className='text-4xl text-green-300 font-bold flex justify-center mt-9 mb-[7rem]'>Random Password Generator</h1>
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg my-8 text-orange-500 bg-slate-600'>
         <div className='flex shadow rounded-lg overflow-hidden mb-4'>
           <input type="text" value={password} className='outline-none w-full py-1 px-3' placeholder='password' ref={passwordref} readOnly />
