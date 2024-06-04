@@ -10,11 +10,11 @@ function App() {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-    if (numAllow) str += "1234567890";
-    if (charAllow) str += "!@#$%^&*(){}`\~";
+    str = (numAllow)?(str+="1234567890"):str;
+    str = (charAllow)?(str+="!@#$%^&*/(){}`~"):str;
 
     for (let i = 1; i < length; i++) {
-      let ch = Math.floor(Math.random() * str.length + 1);
+      let ch = Math.floor(Math.random() * str.length + 2);
       pass += str.charAt(ch);
     }
     setpass(pass);
